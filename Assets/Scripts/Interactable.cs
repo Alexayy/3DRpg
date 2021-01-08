@@ -13,8 +13,8 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        // This method is ment to be overriden
-        Debug.Log("Interacting with: " + transform.name);
+        // This method is meant to be overriden
+        // Debug.Log("Interacting with: " + transform.name); 
     }
 
     private void Update()
@@ -24,8 +24,8 @@ public class Interactable : MonoBehaviour
             float distance = Vector3.Distance(player.position, interactionTransform.position);
             if (distance <= radius)
             {
+                Interact();
                 hasInteracted = true;
-                Debug.Log("I N T E R A C T");
             } 
         }
     }
@@ -46,6 +46,11 @@ public class Interactable : MonoBehaviour
     
     private void OnDrawGizmosSelected()
     {
+        if (interactionTransform == null)
+        {
+            interactionTransform = transform;
+        }
+        
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(interactionTransform.position, radius);
     }
