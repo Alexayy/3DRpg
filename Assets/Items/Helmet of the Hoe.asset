@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 641e10b09fc0958b19d5a4cc00ef9406, type: 3}
-  m_Name: Shiled
+  m_Script: {fileID: 11500000, guid: 016d9ec03ab63e210aea9d8b1cfcc0de, type: 3}
+  m_Name: Helmet of the Hoe
   m_EditorClassIdentifier: 
-  name: Shiled of the Bro
+  name: Helmet of the Hoe
   icon: {fileID: 21300000, guid: 62ac187fbfbb1af15ab419304398fde5, type: 3}
   isDefaultItem: 0
+  equipSlot: 0
+  armorModifier: 2
+  damageModifier: 1
