@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 016d9ec03ab63e210aea9d8b1cfcc0de, type: 3}
-  m_Name: Helmet of the Broski
+  m_Name: Pants
   m_EditorClassIdentifier: 
-  name: Helmet of the Broski
-  icon: {fileID: 21300000, guid: e890fa00a87f47f45b77797a2314a1f8, type: 3}
-  isDefaultItem: 0
-  equipSlot: 0
-  armorModifier: 3
+  name: Pants
+  icon: {fileID: 0}
+  isDefaultItem: 1
+  equipSlot: 2
+  mesh: {fileID: 8281534093821475575, guid: 85356b4d34c376c18a5b393f9ffa174d, type: 3}
+  coveredMeshRegions: 
+  armorModifier: 0
   damageModifier: 0
