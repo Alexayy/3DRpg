@@ -54,7 +54,7 @@ public class EquipmentManager : MonoBehaviour
 			onEquipmentChanged.Invoke(newItem, oldItem);
 		}
 
-		SetEquipmentBlendShapes(newItem, 0);
+		SetEquipmentBlendShapes(newItem, 100);
 
 		// Insert the item into the slot
 		currentEquipment[slotIndex] = newItem;
@@ -78,7 +78,7 @@ public class EquipmentManager : MonoBehaviour
 			}
 			// Add the item to the inventory
 			Equipment oldItem = currentEquipment[slotIndex];
-			SetEquipmentBlendShapes(oldItem, 100);
+			SetEquipmentBlendShapes(oldItem, 0);
 			inventory.Add(oldItem);
 
 			// Remove the item from the equipment array
@@ -108,7 +108,7 @@ public class EquipmentManager : MonoBehaviour
 	{
 		foreach (EquipmentMeshRegion blendShape in item.coveredMeshRegions)
 		{
-			targetMesh.SetBlendShapeWeight((int)blendShape, weight);
+			targetMesh.SetBlendShapeWeight( (int)blendShape, weight );
 		}
 	}
 
