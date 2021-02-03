@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /* Keep track of equipment. Has functions for adding and removing items. */
 
@@ -126,5 +124,4 @@ public class EquipmentManager : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.U))
 			UnequipAll();
 	}
-
 }
